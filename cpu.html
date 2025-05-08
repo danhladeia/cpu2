@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de Computadores: Entendendo Processadores</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #2e7d32;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2e7d32;
+        }
+        h2 {
+            color: #2e7d32;
+            margin-top: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #538d22;
+        }
+        .logo {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .section {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #2e7d32;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .processor-img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .processor-img img {
+            max-width: 200px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .installation-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .step {
+            width: 45%;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        .important {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/300x100/2e7d32/ffffff?text=IFRN" alt="Logo IFRN" width="300">
+        </div>
+        <h1>Manutenção de Computadores</h1>
+        <h2>Entendendo os Processadores</h2>
+    </header>
+
+
+    <section id="soquetes">
+        <h2>Soquetes de Processadores</h2>
+        <p>Os soquetes são interfaces físicas presentes nas placas-mãe que servem como ponto de conexão para os processadores. Cada soquete possui um design específico com número determinado de pinos ou contatos que deve ser compatível com o processador a ser instalado.</p>
+        
+        <p>Desde o início da fabricação de computadores, tanto a Intel quanto a AMD desenvolveram diferentes tipos de soquetes para cada nova geração ou família de processadores. Isso se deve à evolução tecnológica e à necessidade de adicionar funcionalidades, aumentar a velocidade de transmissão de dados e melhorar o desempenho geral.</p>
+        
+        <p>Os soquetes podem variar em formato, tamanho e sistema de montagem:</p>
+        <ul>
+            <li><strong>PGA (Pin Grid Array)</strong>: Os pinos estão no processador e encaixam em furos no soquete. Usado principalmente pela AMD.</li>
+            <li><strong>LGA (Land Grid Array)</strong>: Os pinos estão no soquete e fazem contato com superfícies planas no processador. Usado principalmente pela Intel.</li>
+            <li><strong>BGA (Ball Grid Array)</strong>: Os processadores são soldados diretamente na placa-mãe, sem soquete (comum em laptops).</li>
+        </ul>
+        
+        <div class="important">
+            <p><strong>Importante:</strong> A escolha correta do soquete é fundamental, pois determina quais processadores poderão ser utilizados na placa-mãe. Não é possível instalar um processador em um soquete incompatível.</p>
+        </div>
+        
+        <h3>Tabela com lista antiga de soquetes:</h3>
+        <table>
+            <tr>
+                <th>Soquete</th>
+                <th>Número de Pinos</th>
+                <th>Data de Lançamento</th>
+                <th>Processadores Compatíveis</th>
+            </tr>
+            <tr>
+                <td>Soquete 0</td>
+                <td>168</td>
+                <td>1989</td>
+                <td>486 DX</td>
+            </tr>
+            <tr>
+                <td>Soquete 1</td>
+                <td>169</td>
+                <td>ND</td>
+                <td>486 DX, 486 DX2, 486 SX, 486SX2</td>
+            </tr>
+            <tr>
+                <td>Soquete 2</td>
+                <td>238</td>
+                <td>ND</td>
+                <td>486 DX, 486 DX2, 486 SX, 486 SX2, Pentium Overdrive</td>
+            </tr>
+            <tr>
+                <td>Soquete 7</td>
+                <td>321</td>
+                <td>Jun 1995</td>
+                <td>Pentium-75 to Pentium-200, Pentium MMX, K5, K6, 6x86, 6x86MX, MII</td>
+            </tr>
+            <tr>
+                <td>Slot 1</td>
+                <td>242</td>
+                <td>Mai 1997</td>
+                <td>Pentium II, Pentium III (Cartucho), Celeron SEPP (Cartucho)</td>
+            </tr>
+        </table>
+
+        <h3>Tabela com soquetes recentes:</h3>
+        <table>
+            <tr>
+                <th>Soquete</th>
+                <th>Número de Pinos</th>
+                <th>Data de Lançamento</th>
+                <th>Processadores Compatíveis</th>
+            </tr>
+            <tr>
+                <td>LGA775</td>
+                <td>775</td>
+                <td>Ago 2004</td>
+                <td>Pentium 4, Pentium D, Core 2 Duo, Core 2 Quad, Core 2 Extreme</td>
+            </tr>
+            <tr>
+                <td>LGA1155</td>
+                <td>1.155</td>
+                <td>Jan 2011</td>
+                <td>Core i3/i5/i7 séries 2000 e 3000, Pentium séries G600/G800/G2000</td>
+            </tr>
+            <tr>
+                <td>LGA1156</td>
+                <td>1.156</td>
+                <td>Set 2009</td>
+                <td>Core i3 série 500, Core i5 séries 600/700, Core i7 série 800</td>
+            </tr>
+            <tr>
+                <td>AM3</td>
+                <td>941</td>
+                <td>Abr 2010</td>
+                <td>Athlon II, Phenom II, Sempron (Soquete AM3)</td>
+            </tr>
+            <tr>
+                <td>AM3+</td>
+                <td>942</td>
+                <td>Out 2011</td>
+                <td>Athlon II, Phenom II, Sempron (Soquete AM3), FX</td>
+            </tr>
+        </table>
+        
+        <h3>Evolução dos soquetes</h3>
+        <p>Os soquetes evoluíram significativamente ao longo do tempo:</p>
+        <ul>
+            <li><strong>Aumento no número de pinos/contatos</strong>: Os primeiros soquetes tinham menos de 200 pinos, enquanto os mais recentes ultrapassam 1.000 pinos, permitindo maior bandwidth e mais recursos.</li>
+            <li><strong>Sistemas de retenção melhorados</strong>: Evoluíram de sistemas simples de fixação para mecanismos mais seguros e eficientes.</li>
+            <li><strong>Suporte a novas tecnologias</strong>: Os soquetes mais recentes suportam recursos avançados como velocidades de memória mais altas, mais canais de memória e interfaces de E/S mais rápidas.</li>
+            <li><strong>Melhor dissipação térmica</strong>: Designs mais recentes facilitam a transferência de calor do processador para o dissipador.</li>
+        </ul>
+        
+        <div class="note">
+            <p><strong>Nota sobre nomenclatura</strong>: A Intel costuma usar o prefixo "LGA" (Land Grid Array) seguido pelo número de contatos no soquete (exemplo: LGA1700). A AMD tradicionalmente nomeia seus soquetes com letras (exemplos: Soquete AM4, FM2+).</p>
+        </div>
+    </section>
+
+
+    <section id="compatibilidade">
+        <h2>Compatibilidade entre Soquetes e Processadores</h2>
+        
+        <p>A compatibilidade entre soquetes e processadores é um fator crítico na montagem e atualização de computadores. Cada tipo de soquete suporta apenas processadores específicos, e esta compatibilidade é determinada por vários fatores:</p>
+        
+        <div class="container">
+            <div class="section">
+                <h3>Fatores que determinam a compatibilidade</h3>
+                <ul>
+                    <li><strong>Disposição física dos pinos/contatos</strong>: O número e a configuração dos pinos ou contatos devem corresponder exatamente.</li>
+                    <li><strong>Design mecânico</strong>: Inclui dimensões físicas, mecanismo de travamento e posicionamento.</li>
+                    <li><strong>Especificações elétricas</strong>: Voltagem, corrente e sinais elétricos devem ser compatíveis.</li>
+                    <li><strong>Chipset da placa-mãe</strong>: Mesmo com soquete fisicamente compatível, o chipset pode não suportar um determinado processador.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h3>Consequências da incompatibilidade</h3>
+                <ul>
+                    <li><strong>Impossibilidade de instalação física</strong>: Processadores incompatíveis não encaixam no soquete.</li>
+                    <li><strong>Danos ao hardware</strong>: Tentar forçar um processador em um soquete incompatível pode danificar os pinos/contatos.</li>
+                    <li><strong>Falha na inicialização</strong>: Mesmo se fisicamente encaixar, o sistema pode não iniciar.</li>
+                    <li><strong>Funcionamento instável</strong>: Em casos raros, pode haver instabilidade mesmo que o sistema inicie.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="important">
+            <p><strong>Importante:</strong> Sempre verifique a compatibilidade do processador com o soquete da placa-mãe antes de fazer uma compra ou tentativa de instalação. Consulte a documentação oficial do fabricante da placa-mãe para uma lista completa de processadores suportados.</p>
+        </div>
+    </section>
+
+    <section id="conclusao">
+        <h2>Conclusão sobre Soquetes de Processadores</h2>
+        
+        <div class="container">
+            <div class="section">
+                <h3>Pontos Principais</h3>
+                <ul>
+                    <li>Os soquetes são interfaces físicas nas placas-mãe que conectam o processador ao restante do sistema.</li>
+                    <li>Cada geração de processadores tende a introduzir novos tipos de soquetes com mais recursos e capacidades.</li>
+                    <li>Existem diferentes tipos de soquetes, como PGA (pinos no processador) e LGA (pinos no soquete).</li>
+                    <li>A compatibilidade entre soquete e processador é essencial e não pode ser contornada.</li>
+                    <li>O número de pinos/contatos aumentou significativamente ao longo das gerações, refletindo a necessidade de maior largura de banda e suporte a novas tecnologias.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h3>Considerações Práticas</h3>
+                <ul>
+                    <li>Ao planejar uma atualização de processador, sempre verifique se o soquete da sua placa-mãe é compatível.</li>
+                    <li>Mesmo se o soquete for compatível, verifique se a placa-mãe tem suporte oficial para o processador específico (pode ser necessária uma atualização de BIOS).</li>
+                    <li>O mercado tende a mudar soquetes a cada 2-3 gerações de processadores, o que limita as opções de upgrade a longo prazo.</li>
+                    <li>Placas-mãe com soquetes mais recentes geralmente oferecem recursos mais avançados além do simples suporte ao processador (como PCIe de nova geração, USB mais rápido, etc.).</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="note">
+            <p><strong>Tendências Futuras:</strong> Embora os soquetes continuem sendo o padrão em desktops e servidores, muitos dispositivos móveis e alguns computadores ultrafinos já utilizam processadores BGA (Ball Grid Array) que são soldados diretamente na placa-mãe. Esta tendência reduz o tamanho dos dispositivos, mas elimina a possibilidade de atualização do processador.</p>
+        </div>
+    </section>
+
+   
+    <section id="consideracoes-tecnicas">
+        <h2>Considerações Técnicas Adicionais sobre Soquetes</h2>
+        
+        <div class="container">
+            <div class="section">
+                <h3>Design e Engenharia</h3>
+                <ul>
+                    <li><strong>Zero Insertion Force (ZIF)</strong>: A maioria dos soquetes modernos usa este design, que permite inserir o processador sem aplicar força vertical, reduzindo o risco de danos.</li>
+                    <li><strong>Alinhamento</strong>: Possuem marcadores físicos (geralmente cantos chanfrados ou pinos ausentes) para garantir a orientação correta do processador.</li>
+                    <li><strong>Pressão de contato</strong>: Os sistemas de travamento são projetados para aplicar a pressão correta, garantindo contato elétrico adequado sem danificar o processador.</li>
+                    <li><strong>Materiais</strong>: Usam materiais especiais para os contatos que combinam boa condutividade elétrica com resistência à oxidação e desgaste.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h3>Questões de Compatibilidade Avançadas</h3>
+                <ul>
+                    <li><strong>Microarquitetura vs. Soquete</strong>: Processadores da mesma microarquitetura podem usar soquetes diferentes (ex: Intel Core i7 de alto desempenho usava LGA2011 enquanto os modelos mainstream usavam LGA1155).</li>
+                    <li><strong>Compatibilidade reversa</strong>: Alguns soquetes oferecem compatibilidade reversa limitada (ex: processadores AM3 funcionavam em placas AM2+, mas não o contrário).</li>
+                    <li><strong>Compatibilidade elétrica</strong>: Mesmo com soquete idêntico, um processador pode não funcionar se exigir mais potência do que a placa-mãe pode fornecer.</li>
+                    <li><strong>TDP e Térmica</strong>: Um soquete pode suportar fisicamente um processador, mas se o TDP for muito alto, pode haver problemas de estabilidade ou desempenho reduzido.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3>Cuidados na Instalação e Manutenção</h3>
+        <ol>
+            <li><strong>Limpeza</strong>: Os contatos do soquete são extremamente sensíveis. Nunca toque nos pinos ou nos contatos com os dedos.</li>
+            <li><strong>Proteção</strong>: Mantenha a tampa protetora do soquete no lugar quando nenhum processador estiver instalado.</li>
+            <li><strong>Pasta térmica</strong>: Aplique corretamente a pasta térmica entre o processador e o cooler para facilitar a transferência de calor.</li>
+            <li><strong>Força apropriada</strong>: Use apenas a força necessária ao fechar o mecanismo de travamento. Força excessiva pode danificar o soquete ou o processador.</li>
+        </ol>
+    </section>
+
+   
+</body>
+</html>
